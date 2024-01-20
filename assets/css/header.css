@@ -1,0 +1,112 @@
+/* General header styling */
+.head-container {
+    background-image: url("path/to/subtle-texture.png"); /* Subtle background texture */
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Subtle border */
+  }
+  
+  /* Adjust header height if needed */
+  .head-container {
+    height: 80px;
+  }
+  
+  /* Links and username styling */
+  a,
+  #head-name {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    margin-left: 15px;
+  }
+  
+  a:hover {
+    color: #007bff; /* Blue on hover */
+  }
+  
+  #head-name {
+    margin-right: 15px;
+  }
+  
+  /* Logo integration */
+  .head-container img {
+    height: 40px;
+    margin-right: 15px;
+  }
+  
+  /* Styling for logged-in user's avatar (optional) */
+  #head-name img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+  }
+  
+  /* Dark mode (optional) */
+  @media (prefers-color-scheme: dark) {
+    .head-container {
+      background-image: url("path/to/dark-texture.png"); /* Different texture for dark mode */
+      color: #fff;
+    }
+    a:hover {
+      color: #666; /* Darker gray on hover */
+    }
+  }
+
+
+/* CSS */
+.button-50 {
+  appearance: button;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-50:focus {
+  text-decoration: none;
+}
+
+.button-50:hover {
+  text-decoration: none;
+}
+
+.button-50:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.button-50:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-50 {
+    padding: 12px 50px;
+  }
+}

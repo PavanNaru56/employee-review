@@ -1,0 +1,16 @@
+<div class="head-container">
+    <% if(locals.user) { %>
+
+        <p id="head-name"><%= user.username  %></p>
+
+        <a href="/sign-out" id ="head-sign-out">Sign Out</a>
+
+
+        <% }else{ %>
+
+            <a href="/sign-up" id ="head-sign-up">Sign Up</a>
+            <a href="/"  id ="head-sign-in">Sign In</a>
+
+
+            <% } %>
+</div>

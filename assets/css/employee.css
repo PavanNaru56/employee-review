@@ -1,0 +1,27 @@
+.employee-dashboard {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.employee-dashboard p {
+    margin: 0;
+    color: #333;
+}
+
+.employee-dashboard a {
+    display: inline-block;
+    padding: 8px 12px;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #3498db; /* Blue Done button */
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.employee-dashboard a:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}

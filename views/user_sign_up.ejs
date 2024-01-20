@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="/css/sign-up.css">
+<div class="form-container">
+
+<form action="/create" method="POST" >
+    <input type = "text" name = "username" placeholder="Your username" required id ="sign-in-name">
+    <input type = "email" name = "email" placeholder="Your email" required id ="sign-in-email">
+    <input type = "password" name = "password" placeholder="Your password" required id ="sign-in-password">
+    <input type = "password" name = "confirm_password" placeholder="Confirm Password" required id ="sign-in-psd">
+
+    <select name="role" id="role" id ="sign-in-role">
+        <option selected value="employee">Employee</option>
+        <option value="admin">Admin</option>
+    </select>
+
+
+    <input type = "submit"  value="Sign Up" id ="sign-in-submit" class="button-50">
+</form>
+
+</div>
