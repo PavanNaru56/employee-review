@@ -1,3 +1,4 @@
+//used to create the session and and destroy the session these are required these are avaialble in passport.js documentation
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const User = require('../models/user');

@@ -1,3 +1,4 @@
+//uses for connects the user controller and dashboard controller
 const express = require('express');
 const passport = require('passport');
 const router = express.Router();
@@ -11,6 +12,7 @@ router.get('/admin-dashboard',dashboardController.adminDashboards);
 router.get('/employee-dashboard/:id',dashboardController.employeeDashboard);
 router.get('/destroy/:id',UserController.destroySession);
 router.post('/create',UserController.create);
+//passport as an middle ware
 router.post('/create-session',
 passport.authenticate('local',{failureRedirect : '/'}),
 UserController.createSession

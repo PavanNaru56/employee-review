@@ -1,18 +1,18 @@
 
 const User = require('../models/user');
-
+//for rendering sig in page
 module.exports.signIn = (req,res) => {
     return res.render('user_sign_in',{
         title : "Sign In"
     })
 }
-
+//for rendering the sign up page
 module.exports.signUp = (req,res) => {
     return res.render('user_sign_up',{
         title : "Sign Up"
     })
 }
-
+//create the account based upon the admin or employee 
 module.exports.create =  async (req,res) => {
 
     try{
@@ -53,7 +53,7 @@ module.exports.create =  async (req,res) => {
 
 }
 
-
+//creates the session when user or admin logged in
 module.exports.createSession = (req,res)=>{
 
     if(req.user.role == 'admin'){
@@ -61,6 +61,7 @@ module.exports.createSession = (req,res)=>{
     }
     return res.redirect(`/employee-dashboard/${req.user.id}`);
 }
+
 
 
 module.exports.destroySession = async (req,res) => {
@@ -89,6 +90,7 @@ module.exports.destroySession = async (req,res) => {
     }
 
 }
+//destroys the session when user wants to sign out
 
 module.exports.destroySessio = (req,res,next) => {
     req.logout(function(err){

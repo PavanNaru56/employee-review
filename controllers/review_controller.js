@@ -1,6 +1,6 @@
 const User = require("../models/user");
 const Review = require("../models/review");
-
+//sends the review to the particula employess whose admin wants to send
 module.exports.submitReview = async (req,res) => {
     console.log(req.user.username);
     console.log(req.params.id);
@@ -35,7 +35,7 @@ module.exports.submitReview = async (req,res) => {
     }
 
 }
-
+//after the employee receives the review he can know the review and deletes the review
 module.exports.doneReview = async (req,res) => {
     try{
 
