@@ -3,11 +3,11 @@ const express = require('express');
 //used to create the cookies
 const cookieParser = require('cookie-parser');
 //port established at 8000
-const port = 8000;
+const port = 8080;
 //body parser is used to get extarct the data 
 const bodyParser = require('body-parser');
 //express starts
-const app = express();
+//const app = express();
 //expressLayouts are used to create the layout and makes easier for creating different post or content in same design
 const expressLayouts = require('express-ejs-layouts');
 //checks whether mongodb running or not
