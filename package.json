@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "naru",
@@ -20,6 +24,7 @@
     "nodemon": "^3.0.3",
     "passport": "^0.7.0",
     "passport-local": "^1.0.0",
+    "vercel": "^33.3.0",
     "views": "^1.0.2"
   }
 }

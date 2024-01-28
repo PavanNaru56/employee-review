@@ -1,7 +1,9 @@
+
+//imports the models from the database
 const Review = require('../models/review');
 
 const User = require('../models/user');
-
+//creates the admin dashboard when admin was signed
 
 module.exports.adminDashboards = async (req,res) => {
     try{
@@ -38,6 +40,7 @@ module.exports.adminDashboards = async (req,res) => {
     }
 }
 
+//creates the employee dashboard when employees signed
 
 module.exports.employeeDashboard = async (req,res)=>{
     try{
