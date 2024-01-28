@@ -49,7 +49,7 @@ app.use(session({
         maxAge : (1000*60*100)
     },
     store : MongoStore.create({
-        mongoUrl : 'mongodb://127.0.0.1/review'
+        mongoUrl : 'mongodb+srv://pavannaru56:yeISXySkrESURxpF@cluster0.rpjclhn.mongodb.net/review?retryWrites=true&w=majority'
     })
 
 }));
