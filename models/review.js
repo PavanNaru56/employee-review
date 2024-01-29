@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+// schema and mode of reviews
 const reviewSchema = new mongoose.Schema({
     review : {
         type : String
